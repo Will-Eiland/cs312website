@@ -1,8 +1,8 @@
-/*Will_Eiland-Module9-7/15/2026*/
+/*Will_Eiland-Module10-7/20/2026*/
 
 body{
     background: linear-gradient(to bottom, rgb(255, 241, 239), rgb(247, 150, 147));
-    color:black
+    color:black;
 }
 
 main {
@@ -92,4 +92,68 @@ a{
 #header{
     box-shadow: 2px 2px blue; 
     text-shadow: 5px 5px 1px rgb(149, 167, 149);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* Module 10 Responsive Styles */
+
+@media only screen and (max-width: 900px) {
+
+    #wrapper {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+    
+
+    .card {
+        min-width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #wrapper {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #navigation ul {
+        flex-direction: column;
+    }
+
+    #navigation a {
+        text-align: center;
+        padding: 12px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    main {
+        padding:12px;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin: 10px;
+        padding: 0;
+        gap: 12px;
+    }
 }
